@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Nixie+One&display=swap');
+
+:root {
+    --bright-green: #539b53;
+    --body: 'Nixie One', cursive;
+  }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--body);
+    color: #192a19;
+    background-color: var(--bright-green);
+  }
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 5vw;
+}
+
+#play-button {
+
+    width: 10vw;
+    height: 4vw;
+    font-size: 2rem;
+    border-radius: 5px;
+    background-color: #539b53;
+    color: #192a19;
+    border-color:#192a19;
+    filter: drop-shadow(1px 1px 1px);
+    cursor: pointer;
+}
+
+#play-button:active {
+    background-color: #b2dbb2;
+    color: #fff;
+    border-color: #fff;
+    filter: none;
+
+} 
