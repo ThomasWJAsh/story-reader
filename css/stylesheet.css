@@ -11,6 +11,7 @@
     font-family: var(--body);
     color: #192a19;
     background-color: var(--bright-green);
+    font-weight: 800;
   }
 
 .container {
@@ -18,13 +19,13 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin: 5vw;
+    margin: 20vw;
 }
 
 #play-button {
 
-    width: 10vw;
-    height: 4vw;
+    min-width: 10vw;
+    min-height: 4vw;
     font-size: 2rem;
     border-radius: 5px;
     background-color: #539b53;
@@ -32,6 +33,7 @@
     border-color:#192a19;
     filter: drop-shadow(1px 1px 1px);
     cursor: pointer;
+    margin: 2vw;
 }
 
 #play-button:active {

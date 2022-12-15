@@ -7,14 +7,13 @@ let story = new SpeechSynthesisUtterance(document.querySelector('#text-for-reade
 
 story.volume = 0.5;
 story.lang = 'en';
-story.rate = 1;
+story.rate = 0.6;
 story.pitch = 1;
 
 setTimeout(() => {
     voices = speechSynthesis.getVoices();
-    story.voice = voices[0];
-    console.log(story.voice = voices[0]);
-}, 1000);
+    story.voice = voices[2];
+    }, 1000);
 
 let button = document.querySelector('#play-button');
 
@@ -27,7 +26,6 @@ function readStory(htmlObject) {
     {
     play = false;
     start = false;
-    console.log(story);
     speechSynthesis.cancel();
     synth.speak(story);
 
@@ -38,7 +36,7 @@ function readStory(htmlObject) {
     play = false;
     synth.resume();
     }
-    else 
+    else // Pause the playback
     {
     play = true;
     synth.pause();
@@ -51,7 +49,7 @@ function buttonClicked(e) {
     e.preventDefault();
 
     if (play) {
-        button.innerHTML = "Pause ⏸";
+        button.innerHTML = "Pause ||";
     }
 
     else {
